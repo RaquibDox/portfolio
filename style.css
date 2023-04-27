@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    background-color: #111;;
+  }
+  
+  canvas {
+    display: block;
+    cursor: crosshair;
+    width: 70%;
+    margin: auto;
+    height: 50vh;
+    background-color: #141313;
+  }
+  
+  .move-mouse-text {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AAA;
+  }
+  
