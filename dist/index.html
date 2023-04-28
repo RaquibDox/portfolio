@@ -14,20 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Montserrat:wght@100&family=Poppins&display=swap" rel="stylesheet">
     <script type="module" src="./script.js" defer></script>
 </head>
-<body class="bg-darkGray">
-    <header class="bg-semiGray h-20">
-        <ul class="w-[29rem] h-full m-auto flex flex-row justify-between items-center">
-            <li><a href="https://moviesdox.netlify.app/" target="_blank" class="text-gray-100 font-montserrat font-bold text-xl">MoviesDox</a><span class="hidden text-white ml-10 md:inline-block">/</span></li>
-            <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=70raquib@gmail.com" target="_blank" class="text-gray-100 font-montserrat font-bold text-xl">Contact</a><span class="hidden text-white ml-10 md:inline-block">/</span></li>
-            <li><a href="https://type-with-raquib.netlify.app/" target="_blank" class="text-gray-100 font-montserrat font-bold text-xl">TypingDox</a></li>
+<body class="bg-darkGray h-full">
+    <header class="fixed z-10 bottom-0 bg-semiGray w-full sm:h-20 h-14 sm:static">
+        <ul class="sm:w-[29rem] h-full m-auto flex flex-row sm:justify-between justify-center items-center gap-8">
+            <li><a href="https://moviesdox.netlify.app/" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">MoviesDox</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-clapperboard"></i></span></a><span class="hidden text-white ml-10 sm:inline-block">/</span></li>
+            <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=70raquib@gmail.com" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">Contact</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-envelope"></i></span></a><span class="hidden text-white ml-10 sm:inline-block">/</span></li>
+            <li><a href="https://type-with-raquib.netlify.app/" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">TypingDox</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-keyboard"></i></span></a></li>
         </ul>
     </header>
     <canvas id="canvas"></canvas>
-    <h2 class="move-mouse-text">Move the mouse!</h2>
-    <main class="relative top-[-3.75rem]">
-        <h1 class="text-red-50 font-sans font-montserrat tracking-wider leading-relaxed text-4xl font-black  text-center w-2/3 mx-auto">Hi, I am Raquib. I am still developing this website, until then here are some quick links. </h1>
-        <h2 class="mt-4 text-red-50 font-sans font-montserrat tracking-wider leading-relaxed text-2xl font-black text-center w-2/3 mx-auto">Use <span class="text-semiGreen bg-semiGray"><a href="https://www.npmjs.com/package/raquibdox?activeTab=readme" target="_blank">npx raquibdox</a></span> for CLI.</h2>
-        <ul class="text-white w-full h-8 mt-20 flex flex-row justify-center items-center gap-x-10 text-xl">
+    <h2 class="move-mouse-text hidden sm:block sm:text-sm">Move the mouse!</h2>
+    <main class="relative mt-10 top-[-50px]">
+        <h1 class="text-red-50 font-sans font-montserrat tracking-wider leading-relaxed sm:text-4xl text-xl font-black  text-center w-2/3 mx-auto">Hi, I am Raquib. I am still developing this website, until then here are some quick links. </h1>
+        <h2 class="mt-4 text-red-50 font-sans font-montserrat tracking-wider leading-relaxed sm:text-2xl font-black text-center w-2/3 mx-auto">Use <span class="text-semiGreen bg-semiGray p-1 rounded-xl inline-block"><a href="https://www.npmjs.com/package/raquibdox?activeTab=readme" target="_blank">npx raquibdox</a></span> for CLI.</h2>
+        <ul class="text-white w-full h-full my-16 sm:mb-0 flex flex-row flex-wrap justify-center items-center gap-10 text-xs sm:text-xl">
             <li><a href="https://github.com/RaquibDox" target="_blank" class="bg-semiGray font-montserrat font-bold px-3 py-2 rounded-xl"><i class="fa-brands fa-github mr-2"></i>Github</a></li>
             <li><a href="https://www.linkedin.com/in/md-raquib-6a410b192/" target="_blank" class="bg-semiGray font-montserrat font-bold px-3 py-2 rounded-xl"><i class="fa-brands fa-linkedin mr-2"></i>Linkedin</a></li>
             <li><a href="https://raquib-dox-resume.netlify.app/MD%20raquib-Resume.pdf" download target="_blank" class="bg-semiGray font-montserrat font-bold px-3 py-2 rounded-xl"><i class="fa-regular fa-file-pdf mr-2"></i>Resume</a></li>

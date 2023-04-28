@@ -1,9 +1,4 @@
-body, html {
-    margin: 0;
-    height: 100vh;
-    background-color: #111;;
-  }
-  
+
   canvas {
     display: block;
     cursor: crosshair;
@@ -15,7 +10,7 @@ body, html {
   
   .move-mouse-text {
     position: relative;
-    top: -100px;
+    top: -50px;
     width: 100%;
     letter-spacing: 4px;
     text-align: center;
