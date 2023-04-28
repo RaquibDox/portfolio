@@ -7,6 +7,13 @@
     height: 50vh;
     background-color: #141313;
   }
+
+  @media (max-width: 640px) {
+    canvas{
+      width: 50%;
+      height: 30vh;
+    }
+}
   
   .move-mouse-text {
     position: relative;
