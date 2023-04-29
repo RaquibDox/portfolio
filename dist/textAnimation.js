@@ -1,19 +1,3 @@
-// import Vector from "./vectory-lib";
-
-/*
-  Johan Karlsson (DonKarlssonSan) 2018
-  
-  Using my vector lib stored as a separate Pen: 
-  https://codepen.io/DonKarlssonSan/pen/JreEJO
-  
-  Also available at GitHub:
-  https://github.com/DonKarlssonSan/vectory
-  
-  and npm:
-  https://www.npmjs.com/package/vectory-lib
-*/
-
-
 
 const config = {
   text: "Md Raquib",
