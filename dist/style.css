@@ -17,13 +17,19 @@
   
   .move-mouse-text {
     position: relative;
-    top: -50px;
+    top: -60px;
     width: 100%;
     letter-spacing: 4px;
     text-align: center;
-    font-weight: bold;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: #AAA;
+    color: #5f5f5f;
   }
   
+  .icons{
+    width: 75%;
+  }
+
+  .links{
+    width: 80%;
+  }
