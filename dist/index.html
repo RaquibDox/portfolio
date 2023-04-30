@@ -13,16 +13,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Montserrat:wght@100&family=Poppins&display=swap" rel="stylesheet">
     <script type="module" src="./textAnimation.js" defer></script>
+    <script src="./handleContact.js" defer></script>
 </head>
 <body class="bg-darkGray h-full">
     <header class="fixed z-10 bottom-0 bg-semiGray w-full sm:h-20 h-14 sm:sticky sm:top-0 drop-shadow-[0_35px_35px_rgba(225,225,225,0.15)]">
         <ul class="icons sm:w-[29rem] h-full m-auto flex flex-row justify-between items-center">
             <li><a href="https://moviesdox.netlify.app/" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">MoviesDox</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-clapperboard"></i></span></a><span class="hidden text-white ml-10 sm:inline-block">/</span></li>
-            <li><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=70raquib@gmail.com" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">Contact</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-envelope"></i></span></a><span class="hidden text-white ml-10 sm:inline-block">/</span></li>
+            <li><span id="contactButton" class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block cursor-pointer">Contact</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-envelope"></i></span></a><span class="hidden text-white ml-10 sm:inline-block">/</span></li>
             <li><a href="https://type-with-raquib.netlify.app/" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">TypingDox</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-keyboard"></i></span></a></li>
         </ul>
     </header>
-    <!-- <div class="container w-full flex justify-center items-center"></div> -->
+    <div id="contactMePopUp" class="absolute top-0 right-0 w-full h-[100vh] z-30 bg-white bg-opacity-20 flex justify-center items-center hidden">
+        <form action="" class="bg-semiGray flex flex-col px-[2vw] py-[4vw] w-11/12 max-w-[600px] rounded-xl relative" onsubmit="sendEmail(); reset(); return false;">
+            <h3 class="text-red-50 font-semibold text-2xl mb-5">Contact Me</h3>
+            <button type="button" class="close text-semiGreen text-3xl absolute right-4 top-3"><i class="fa-solid fa-xmark"></i></button>
+            <!-- <input type="text" id="name" placeholder="Your Name" required> -->
+            <input type="email" id="email" placeholder="Email id" required class="border-4 rounded-lg py-1 border-semiGreen my-3 outline-none bg-semiGray text-2xl text-center text-gray-200">
+            <!-- <input type="number" id="phone" placeholder="Phone no." required> -->
+            <textarea id="message" rows="5" placeholder="How can I help you?" class="border-4 rounded-lg py-1 border-semiGreen my-3 outline-none bg-semiGray text-2xl text-center text-gray-200"></textarea>
+            <button type="submit" class="bg-semiGreen mx-auto mt-4 rounded-lg w-2/3 h-12 text-3xl text-white">Send</button>
+        </form>
+    </div>
     <canvas id="canvas"></canvas>
     <h2 class="move-mouse-text hidden sm:block sm:text-sm">Move the mouse!</h2>
     <main class="relative mt-10 top-[-50px]">
@@ -34,5 +45,6 @@
             <li><a href="https://raquib-dox-resume.netlify.app/MD%20raquib-Resume.pdf" download target="_blank" class="bg-semiGray font-montserrat font-bold px-3 py-2 rounded-xl"><i class="fa-regular fa-file-pdf mr-2"></i>Resume</a></li>
         </ul>
     </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
