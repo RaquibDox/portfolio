@@ -22,7 +22,17 @@
             <li><a href="https://type-with-raquib.netlify.app/" target="_blank"><span class="text-gray-100 font-montserrat font-bold text-xl m-0 p-0 hidden sm:inline-block">TypingDox</span><span class="sm:hidden text-4xl text-red-50"><i class="fa-solid fa-keyboard"></i></span></a></li>
         </ul>
     </header>
-    <div class="absolute top-0 right-0 w-full h-screen z-30 bg-red-300 flex justify-center items-center"></div>
+    <div class="absolute top-0 right-0 w-full h-[100vh] z-30 bg-white bg-opacity-20 flex justify-center items-center">
+        <form action="" class="bg-semiGray flex flex-col px-[2vw] py-[4vw] w-11/12 max-w-[600px] rounded-xl relative">
+            <h3 class="text-red-50 font-semibold text-2xl mb-5">Contact Me</h3>
+            <button type="button" class="text-semiGreen text-3xl absolute right-4 top-3"><i class="fa-solid fa-xmark"></i></button>
+            <!-- <input type="text" id="name" placeholder="Your Name" required> -->
+            <input type="email" id="email" placeholder="Email id" required class="border-4 rounded-lg py-1 border-semiGreen my-3 outline-none bg-semiGray text-2xl text-center">
+            <!-- <input type="number" id="phone" placeholder="Phone no." required> -->
+            <textarea id="message" rows="10" placeholder="How can I help you?" class="border-4 rounded-lg py-1 border-semiGreen my-3 outline-none bg-semiGray text-2xl text-center text-gray-200"></textarea>
+            <button type="submit" class="bg-semiGreen mx-auto mt-4 rounded-lg w-2/3 h-12 text-3xl text-white">Send</button>
+        </form>
+    </div>
     <canvas id="canvas"></canvas>
     <h2 class="move-mouse-text hidden sm:block sm:text-sm">Move the mouse!</h2>
     <main class="relative mt-10 top-[-50px]">
