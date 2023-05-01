@@ -21,11 +21,13 @@ function sendEmail() {
 
 close.addEventListener("click", () => {
   contactMe.classList.add("hidden");
+  contactMe.classList.remove("flex");
   email.value = "";
   message.value = "";
 })
 
 contactButton.addEventListener("click", () => {
+  contactMe.classList.add("flex");
   contactMe.classList.remove("hidden");
 })
 
