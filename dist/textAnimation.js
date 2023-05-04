@@ -1,11 +1,36 @@
+let animatedText ={};
+
+// onWindowResize();
+
+function onWindowResize(){
+  
+  if(window.innerWidth > 687){
+    animatedText = {
+      name: "Md Raquib",
+      spikeRatio: 0.044,
+      fontSize: 0.175,
+      particleOpacity: 0.28
+    }
+  }
+  else{
+    animatedText = {
+      name: "Raquib",
+      spikeRatio: 0.024,
+      fontSize: 0.275,
+      particleOpacity: 0.58
+    }
+  }
+
+
+// console.log(animatedText.name);
 
 const config = {
-  text: "Md Raquib",
-  widthToSpikeLengthRatio: 0.044
+  text: animatedText.name,
+  widthToSpikeLengthRatio: animatedText.spikeRatio,
 };
 
 const colorConfig = {
-  particleOpacity: 0.28,
+  particleOpacity: animatedText.particleOpacity,
   baseHue: 150,
   hueRange: 20,
   hueSpeed: 0.01,
@@ -242,7 +267,7 @@ function clear() {
 
 function drawText() {
   ctx.save();
-  let fontSize = w * 0.175;
+  let fontSize = w * animatedText.fontSize;
   ctx.font = "bold " + fontSize + "px Arial, Helvetica, sans-serif";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle"
@@ -306,3 +331,8 @@ function updateParticles() {
 
 setup();
 draw(1);
+
+}
+
+window.addEventListener('resize', onWindowResize);
+document.addEventListener('DOMContentLoaded', onWindowResize);
