@@ -4,6 +4,8 @@ const contactMe = document.getElementById("contactMePopUp");
 const contactButton = document.getElementById("contactButton");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const contactForm = document.getElementById("contact-form");
+const sendButton = document.getElementById("send-button");
 
 function sendEmail() {
     Email.send({
@@ -26,9 +28,29 @@ close.addEventListener("click", () => {
   message.value = "";
 })
 
+sendButton.addEventListener("click", () => {
+  if(email.value != "" && message.value != ""){
+    contactMe.classList.add("hidden");
+    contactMe.classList.remove("flex");
+    email.value = "";
+    message.value = "";
+  }
+})
+
+contactMe.addEventListener("click", (event) => {
+  if(!contactForm.contains(event.target)){
+  contactMe.classList.add("hidden");
+  contactMe.classList.remove("flex");
+  email.value = "";
+  message.value = "";
+}
+})
+
 contactButton.addEventListener("click", () => {
   contactMe.classList.add("flex");
   contactMe.classList.remove("hidden");
 })
 
-window.alert = function() {};
+window.alert = function() {
+  console.log("hi alert given");
+};

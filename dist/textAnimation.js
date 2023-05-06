@@ -2,7 +2,7 @@ let animatedText ={};
 
 // onWindowResize();
 
-function onWindowResize(){
+// function onWindowResize(){
   
   if(window.innerWidth > 687){
     animatedText = {
@@ -332,7 +332,7 @@ function updateParticles() {
 setup();
 draw(1);
 
-}
+// }
 
-window.addEventListener('resize', onWindowResize);
-document.addEventListener('DOMContentLoaded', onWindowResize);
+// window.addEventListener('resize', onWindowResize);
+// document.addEventListener('DOMContentLoaded', onWindowResize);
