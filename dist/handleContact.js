@@ -9,13 +9,11 @@ const sendButton = document.getElementById("send-button");
 
 function sendEmail() {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "1vancedtube1@gmail.com",
-        Password : "878AF959284BF23157D377CCBA1722E4DE93",
+        SecureToken : "e0a4b71c-ced3-4297-9952-420466aa22c1",
         To : '70raquib@gmail.com',
         From : '1vancedtube1@gmail.com',
-        Subject : "New Contact from Enquiry",
-        Body : "And this is the body :" +" <br>  Email : " + email.value + "<br> "+ message.value
+        Subject : "Message from : "+ email.value,
+        Body :  " <br>  Email : " + email.value + "<br> "+ message.value
     }).then(
       message => alert(message)
     );
@@ -32,8 +30,6 @@ sendButton.addEventListener("click", () => {
   if(email.value != "" && message.value != ""){
     contactMe.classList.add("hidden");
     contactMe.classList.remove("flex");
-    email.value = "";
-    message.value = "";
   }
 })
 
