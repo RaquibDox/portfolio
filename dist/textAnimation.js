@@ -10,7 +10,7 @@ let animatedText ={};
       spikeRatio: 0.044,
       fontSize: 0.175,
       particleOpacity: 0.28,
-      particleSpeed: 1
+      particleSpeed: 2
     }
   }
   else{
@@ -19,7 +19,7 @@ let animatedText ={};
       spikeRatio: 0.024,
       fontSize: 0.275,
       particleOpacity: 0.5828,
-      particleSpeed: 1
+      particleSpeed: 10
     }
   }
 
@@ -243,8 +243,8 @@ function reset() {
   spikeLength = w * config.widthToSpikeLengthRatio;
   A = w/2.2 ;
   B = h/2.2 ;
-  a = Math.round(Math.random() + 2);
-  b = Math.round(Math.random() + 2);
+  a = Math.round(Math.random() + animatedText.particleSpeed);
+  b = Math.round(Math.random() + animatedText.particleSpeed);
   drawText();
 }
 
