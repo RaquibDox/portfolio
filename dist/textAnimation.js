@@ -9,7 +9,8 @@ let animatedText ={};
       name: "Md Raquib",
       spikeRatio: 0.044,
       fontSize: 0.175,
-      particleOpacity: 0.28
+      particleOpacity: 0.28,
+      particleSpeed: 1
     }
   }
   else{
@@ -17,7 +18,8 @@ let animatedText ={};
       name: "Raquib",
       spikeRatio: 0.024,
       fontSize: 0.275,
-      particleOpacity: 0.58
+      particleOpacity: 0.5828,
+      particleSpeed: 1
     }
   }
 
